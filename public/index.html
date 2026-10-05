@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Blog!¡Blog! Visor de Blogs</title>
+  <link rel="icon" href="/logo.gif">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="left">
+      <a class="brand" href="/"><img src="/logo.gif" alt="" width="163" height="141"><strong>¡Blog!¡Blog!</strong> <span>Visor de Blogs</span></a>
+    </div>
+    <nav class="center">
+      <button id="back" title="Entrada anterior (p)" aria-label="Anterior" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>
+        <span class="label">Anterior</span>
+      </button>
+      <button id="next" class="primary" title="Siguiente entrada (n)" aria-label="Siguiente">
+        <span class="label">Siguiente</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      </button>
+      <button id="random" title="Entrada al azar (r)" aria-label="Random">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><g class="pips"><circle cx="8.5" cy="8.5" r="1.3"/><circle cx="15.5" cy="8.5" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="8.5" cy="15.5" r="1.3"/><circle cx="15.5" cy="15.5" r="1.3"/></g></svg>
+        <span class="label">Random</span>
+      </button>
+    </nav>
+    <div class="right">
+      <button id="copy" class="icon" title="Copiar enlace" aria-label="Copiar enlace">
+        <svg class="idle" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+        <svg class="done" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </button>
+      <a id="open" class="button icon" target="_blank" rel="noopener" title="Abrir en una pestaña nueva" aria-label="Abrir en una pestaña nueva">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>
+      </a>
+    </div>
+  </header>
+  <main id="stage">
+    <p id="status" class="status">Cargando feeds…</p>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

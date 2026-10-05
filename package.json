@@ -1,0 +1,13 @@
+{
+  "name": "blogsviewer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2"
+  },
+  "private": true
+}
