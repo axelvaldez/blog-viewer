@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# The snapshot changes on every build, so browsers must always revalidate it.
+[[headers]]
+  for = "/entries.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
